@@ -41,6 +41,7 @@ To install Pen Hunter, follow these steps:
 ## Usage
 
 Run Pen Hunter with the following command:
-    ```bash
-    ./penhunter.sh
-    ```
+
+```bash
+chmod +x penhunter.sh
+```
