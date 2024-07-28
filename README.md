@@ -45,3 +45,20 @@ Run Pen Hunter with the following command:
 ```bash
 chmod +x penhunter.sh
 ```
+
+
+![1](https://github.com/user-attachments/assets/657390e8-8130-4a74-9998-146b9b1534c7)
+
+![2](https://github.com/user-attachments/assets/e36dc85a-21c0-49f6-979e-be55b7cf36cc)
+
+![3](https://github.com/user-attachments/assets/51756c06-d786-4bd1-85b1-2e705365ab70)
+
+![4](https://github.com/user-attachments/assets/aaa85bf9-146d-456c-9a01-c3852cf8afb4)
+
+![5](https://github.com/user-attachments/assets/5fed5c32-9df7-418e-806c-11dec9f70427)
+
+![6](https://github.com/user-attachments/assets/1a8861b6-cf14-4bc0-8e36-8d8e4fc6ed27)
+
+![7](https://github.com/user-attachments/assets/516b8026-a1ea-4d31-870b-e17e292be115)
+
+
