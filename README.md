@@ -18,7 +18,7 @@ To install Pen Hunter, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/penhunter.git
+    git clone https://github.com/cc1a2b/PenHunter.git
     cd penhunter
     ```
 
@@ -35,7 +35,7 @@ To install Pen Hunter, follow these steps:
 
 4. create directory for one and subdomains:
     ```bash
-    mkdir one && subdomains
+    mkdir payload/one && mkdir payload/subdomains
     ```
 
 ## Usage
