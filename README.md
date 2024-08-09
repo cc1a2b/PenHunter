@@ -62,3 +62,9 @@ chmod +x penhunter.sh
 ![7](https://github.com/user-attachments/assets/516b8026-a1ea-4d31-870b-e17e292be115)
 
 
+## Example;)
+
+
+![lfi](https://github.com/user-attachments/assets/03b219d6-2676-439f-ac02-9c9f43e6a767)
+![xss](https://github.com/user-attachments/assets/2648f0c8-3c45-4024-b255-c3ea92547f8a)
+
