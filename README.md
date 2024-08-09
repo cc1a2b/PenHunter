@@ -35,7 +35,7 @@ To install Pen Hunter, follow these steps:
 
 4. create directory for one and subdomains:
     ```bash
-    mkdir payload/one && mkdir payload/subdomains
+    mkdir penhunter/one && mkdir penhunter/subdomains
     ```
 
 ## Usage
