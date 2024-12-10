@@ -68,3 +68,7 @@ chmod +x penhunter.sh
 ![lfi](https://github.com/user-attachments/assets/03b219d6-2676-439f-ac02-9c9f43e6a767)
 ![xss](https://github.com/user-attachments/assets/2648f0c8-3c45-4024-b255-c3ea92547f8a)
 
+
+
+
+<a href="https://www.buymeacoffee.com/cc1a2b" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
