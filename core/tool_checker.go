@@ -6,7 +6,7 @@ import (
 	"sort"
 	"strings"
 
-	"penhunter/utils"
+	"github.com/cc1a2b/PenHunter/utils"
 )
 
 // Tool represents an external tool

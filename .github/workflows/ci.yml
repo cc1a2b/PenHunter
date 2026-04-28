@@ -21,7 +21,7 @@ jobs:
         run: go test ./...
       
       - name: Build
-        run: go build -o bin/penhunter main.go
+        run: go build -o bin/penhunter ./cmd/penhunter
       
       - name: Check version
         run: ./bin/penhunter --version

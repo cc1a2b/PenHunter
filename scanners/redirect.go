@@ -4,8 +4,8 @@ import (
 	"strings"
 	"time"
 
-	"penhunter/core"
-	"penhunter/types"
+	"github.com/cc1a2b/PenHunter/core"
+	"github.com/cc1a2b/PenHunter/types"
 )
 
 type RedirectScanner struct {

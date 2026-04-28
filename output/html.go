@@ -3,7 +3,7 @@ package output
 import (
 	"html/template"
 	"os"
-	"penhunter/types"
+	"github.com/cc1a2b/PenHunter/types"
 )
 
 type HTMLHandler struct {

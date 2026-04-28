@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"penhunter/utils"
+	"github.com/cc1a2b/PenHunter/utils"
 )
 
 // RunDalfox runs dalfox for XSS scanning

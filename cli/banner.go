@@ -2,7 +2,7 @@ package cli
 
 import (
 	"fmt"
-	"penhunter/utils"
+	"github.com/cc1a2b/PenHunter/utils"
 )
 
 func ShowBanner() {

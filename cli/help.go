@@ -2,8 +2,8 @@ package cli
 
 import (
 	"fmt"
-	"penhunter/core"
-	"penhunter/utils"
+	"github.com/cc1a2b/PenHunter/core"
+	"github.com/cc1a2b/PenHunter/utils"
 )
 
 func ShowHelp() {

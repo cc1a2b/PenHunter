@@ -10,7 +10,7 @@ import (
 	"sort"
 	"strings"
 
-	"penhunter/utils"
+	"github.com/cc1a2b/PenHunter/utils"
 )
 
 // NormalizeURL normalizes a URL to prevent duplicates with different formats

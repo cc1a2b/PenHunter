@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"penhunter/types"
+	"github.com/cc1a2b/PenHunter/types"
 )
 
 type TXTHandler struct {

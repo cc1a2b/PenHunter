@@ -12,11 +12,11 @@ import (
 	"syscall"
 	"time"
 
-	"penhunter/cli"
-	"penhunter/core"
-	"penhunter/output"
-	"penhunter/scanners"
-	"penhunter/utils"
+	"github.com/cc1a2b/PenHunter/cli"
+	"github.com/cc1a2b/PenHunter/core"
+	"github.com/cc1a2b/PenHunter/output"
+	"github.com/cc1a2b/PenHunter/scanners"
+	"github.com/cc1a2b/PenHunter/utils"
 )
 
 // setupSignalHandler sets up Ctrl+C handling like penhunter.sh

@@ -19,11 +19,11 @@ jobs:
       - name: Build
         run: |
           mkdir -p release
-          GOOS=linux GOARCH=amd64 go build -o release/penhunter_linux_amd64 main.go
-          GOOS=linux GOARCH=arm64 go build -o release/penhunter_linux_arm64 main.go
-          GOOS=darwin GOARCH=amd64 go build -o release/penhunter_darwin_amd64 main.go
-          GOOS=darwin GOARCH=arm64 go build -o release/penhunter_darwin_arm64 main.go
-          GOOS=windows GOARCH=amd64 go build -o release/penhunter_windows_amd64.exe main.go
+          GOOS=linux GOARCH=amd64 go build -o release/penhunter_linux_amd64 ./cmd/penhunter
+          GOOS=linux GOARCH=arm64 go build -o release/penhunter_linux_arm64 ./cmd/penhunter
+          GOOS=darwin GOARCH=amd64 go build -o release/penhunter_darwin_amd64 ./cmd/penhunter
+          GOOS=darwin GOARCH=arm64 go build -o release/penhunter_darwin_arm64 ./cmd/penhunter
+          GOOS=windows GOARCH=amd64 go build -o release/penhunter_windows_amd64.exe ./cmd/penhunter
       
       - name: Create checksums
         run: |

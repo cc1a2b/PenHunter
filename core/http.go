@@ -11,7 +11,7 @@ import (
 	"sync"
 	"time"
 
-	"penhunter/types"
+	"github.com/cc1a2b/PenHunter/types"
 )
 
 

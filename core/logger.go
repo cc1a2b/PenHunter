@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"penhunter/utils"
+	"github.com/cc1a2b/PenHunter/utils"
 )
 
 type Logger struct {

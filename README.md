@@ -31,12 +31,22 @@
 
 ## 🚀 Installation
 
+### Quick Install (Go)
+
+```bash
+go install -v github.com/cc1a2b/PenHunter/cmd/penhunter@latest
+```
+
+The binary lands in `$(go env GOPATH)/bin/penhunter` — make sure that directory is on your `PATH`.
+
+> Note: `go install` only ships the binary. To get the bundled `config/` (payloads, encoders, user callbacks), clone the repo or use `make install`.
+
 ### From Source
 
 ```bash
 # Clone the repository
-git clone https://github.com/cc1a2b/penhunter.git
-cd penhunter
+git clone https://github.com/cc1a2b/PenHunter.git
+cd PenHunter
 
 # Build
 make build
@@ -160,7 +170,7 @@ penhunter/
 │   └── random.go
 ├── types/               # Type definitions
 │   └── finding.go
-├── main.go
+├── cmd/penhunter/main.go
 ├── go.mod
 ├── Makefile
 └── README.md

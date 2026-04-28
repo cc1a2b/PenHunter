@@ -5,7 +5,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"penhunter/types"
+	"github.com/cc1a2b/PenHunter/types"
 )
 
 // Global skip flag for Ctrl+C handling

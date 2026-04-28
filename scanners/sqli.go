@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"penhunter/types"
+	"github.com/cc1a2b/PenHunter/types"
 )
 
 type SQLiScanner struct {

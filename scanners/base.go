@@ -4,8 +4,8 @@ import (
 	"net/url"
 	"strings"
 
-	"penhunter/encoders"
-	"penhunter/types"
+	"github.com/cc1a2b/PenHunter/encoders"
+	"github.com/cc1a2b/PenHunter/types"
 )
 
 type BaseScanner struct {

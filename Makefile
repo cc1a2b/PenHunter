@@ -3,13 +3,14 @@
 # Build configuration
 BINARY_NAME=penhunter
 BUILD_DIR=bin
-VERSION=0.1.0
-GITHUB_REPO=cc1a2b/penhunter
+VERSION=1.0.0
+GITHUB_REPO=cc1a2b/PenHunter
+MAIN_PKG=./cmd/penhunter
 
 # Build the binary
 build:
 	@echo "Building $(BINARY_NAME)..."
-	@go build -o $(BUILD_DIR)/$(BINARY_NAME) main.go
+	@go build -o $(BUILD_DIR)/$(BINARY_NAME) $(MAIN_PKG)
 	@echo "Build complete: $(BUILD_DIR)/$(BINARY_NAME)"
 
 # Install to user home directory
@@ -51,11 +52,11 @@ update:
 release:
 	@echo "Building releases for multiple platforms..."
 	@mkdir -p $(BUILD_DIR)/release
-	@GOOS=linux GOARCH=amd64 go build -o $(BUILD_DIR)/release/$(BINARY_NAME)_linux_amd64 main.go
-	@GOOS=linux GOARCH=arm64 go build -o $(BUILD_DIR)/release/$(BINARY_NAME)_linux_arm64 main.go
-	@GOOS=darwin GOARCH=amd64 go build -o $(BUILD_DIR)/release/$(BINARY_NAME)_darwin_amd64 main.go
-	@GOOS=darwin GOARCH=arm64 go build -o $(BUILD_DIR)/release/$(BINARY_NAME)_darwin_arm64 main.go
-	@GOOS=windows GOARCH=amd64 go build -o $(BUILD_DIR)/release/$(BINARY_NAME)_windows_amd64.exe main.go
+	@GOOS=linux GOARCH=amd64 go build -o $(BUILD_DIR)/release/$(BINARY_NAME)_linux_amd64 $(MAIN_PKG)
+	@GOOS=linux GOARCH=arm64 go build -o $(BUILD_DIR)/release/$(BINARY_NAME)_linux_arm64 $(MAIN_PKG)
+	@GOOS=darwin GOARCH=amd64 go build -o $(BUILD_DIR)/release/$(BINARY_NAME)_darwin_amd64 $(MAIN_PKG)
+	@GOOS=darwin GOARCH=arm64 go build -o $(BUILD_DIR)/release/$(BINARY_NAME)_darwin_arm64 $(MAIN_PKG)
+	@GOOS=windows GOARCH=amd64 go build -o $(BUILD_DIR)/release/$(BINARY_NAME)_windows_amd64.exe $(MAIN_PKG)
 	@echo "Releases built in $(BUILD_DIR)/release/"
 
 # Show version
