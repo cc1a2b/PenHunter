@@ -1,0 +1,23 @@
+# PenHunter User Configuration
+# Configure your own callback URLs and domains for testing
+
+# XSS Callback URL - Used for blind XSS testing
+# Examples:
+#   - https://xss.report/c/YOUR_ID
+#   - https://YOUR_BURP_COLLABORATOR.burpcollaborator.net
+#   - https://YOUR_INTERACTSH.oast.fun
+xss_callback: "https://YOUR_XSS_CALLBACK_URL"
+
+# Redirect Test Domain - Used for open redirect testing
+# Use a domain you control or a safe testing domain
+redirect_domain: "evil.com"
+
+# SSRF Callback URL - Used for blind SSRF testing
+# Examples:
+#   - https://YOUR_BURP_COLLABORATOR.burpcollaborator.net
+#   - https://YOUR_INTERACTSH.oast.fun
+ssrf_callback: "https://YOUR_SSRF_CALLBACK_URL"
+
+# Out-of-Band (OOB) Server - General purpose callback
+# Used for various blind vulnerability tests
+oob_server: "https://YOUR_OOB_SERVER"

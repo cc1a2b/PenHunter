@@ -1,0 +1,15 @@
+threads: 25
+timeout: 10
+rate_limit: 100
+user_agents:
+  - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+  - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+  - "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+
+# Callback URLs - Configure in config/user_config.yaml
+# These are placeholders - users must set their own
+xss_callback: "https://YOUR_XSS_CALLBACK_URL"
+redirect_domain: "evil.com"
+ssrf_callback: "https://YOUR_SSRF_CALLBACK_URL"
+oob_server: "https://YOUR_OOB_SERVER"
+

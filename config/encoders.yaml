@@ -1,0 +1,16 @@
+url:
+  description: "URL encoding"
+  enabled: true
+
+base64:
+  description: "Base64 encoding"
+  enabled: true
+
+double:
+  description: "Double URL encoding"
+  enabled: true
+
+unicode:
+  description: "Unicode encoding"
+  enabled: true
+
