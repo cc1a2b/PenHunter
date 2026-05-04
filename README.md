@@ -19,9 +19,9 @@
 **PenHunter** is a powerful, modular web vulnerability scanner written in Go. It provides comprehensive testing for common web vulnerabilities including XSS, SQL Injection, LFI, SSRF, RCE, Open Redirect, and CSRF — with concurrent scanning, advanced detection methods, WAF evasion, and integrations with industry tools like dalfox, sqlmap, and nuclei.
 
 <div align="center">
-<img alt="PenHunter LFI scan output" src="https://github.com/user-attachments/assets/03b219d6-2676-439f-ac02-9c9f43e6a767" width="100%">
+<img alt="PenHunter Demo" src="https://placehold.co/1600x900/0a0a0a/22c55e?text=PenHunter" width="100%">
 
-*PenHunter — LFI vulnerability detection in action.*
+*PenHunter — modular vulnerability scanner with interactive and CLI modes.*
 </div>
 
 ---
@@ -225,6 +225,12 @@ penhunter --check-update
 ## 🖼️ Screenshots
 
 <div align="center">
+
+<img alt="PenHunter — LFI detection" src="https://github.com/user-attachments/assets/03b219d6-2676-439f-ac02-9c9f43e6a767" width="100%">
+
+*LFI vulnerability scan — path traversal detection with confirmed payload.*
+
+<br><br>
 
 <img alt="PenHunter — XSS detection" src="https://github.com/user-attachments/assets/2648f0c8-3c45-4024-b255-c3ea92547f8a" width="100%">
 
