@@ -226,12 +226,6 @@ penhunter --check-update
 
 <div align="center">
 
-<img alt="PenHunter — LFI detection" src="https://github.com/user-attachments/assets/03b219d6-2676-439f-ac02-9c9f43e6a767" width="100%">
-
-*LFI vulnerability scan — path traversal detection with confirmed payload.*
-
-<br><br>
-
 <img alt="PenHunter — XSS detection" src="https://github.com/user-attachments/assets/2648f0c8-3c45-4024-b255-c3ea92547f8a" width="100%">
 
 *XSS vulnerability scan — reflected payload confirmed in response.*
