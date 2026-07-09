@@ -8,13 +8,13 @@
 [![GitHub stars](https://img.shields.io/github/stars/cc1a2b/PenHunter)](https://github.com/cc1a2b/PenHunter/stargazers)
 [![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey)](https://github.com/cc1a2b/PenHunter/releases)
 
-**🔍 Modular Web Vulnerability Scanner**
+**Modular Web Vulnerability Scanner**
 
 *Comprehensive testing for XSS, SQLi, LFI, SSRF, RCE, Open Redirect, and CSRF — built for penetration testers, bug bounty hunters, and security researchers.*
 
 </div>
 
-## 📖 About
+## About
 
 **PenHunter** is a powerful, modular web vulnerability scanner written in Go. It provides comprehensive testing for common web vulnerabilities including XSS, SQL Injection, LFI, SSRF, RCE, Open Redirect, and CSRF — with concurrent scanning, advanced detection methods, WAF evasion, and integrations with industry tools like dalfox, sqlmap, and nuclei.
 
@@ -26,112 +26,112 @@
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
-- [About](#-about)
-- [Features](#-features)
-- [Installation](#-installation)
-- [Quick Start](#-quick-start)
-- [Usage Examples](#-usage-examples)
-- [Screenshots](#-screenshots)
-- [Command Reference](#-command-reference)
-- [Advanced Usage](#-advanced-usage)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Support](#-support)
+- [About](#about)
+- [Features](#features)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Usage Examples](#usage-examples)
+- [Screenshots](#screenshots)
+- [Command Reference](#command-reference)
+- [Advanced Usage](#advanced-usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Support](#support)
 
 ---
 
-## ✨ Features
+## Features
 
-### 🎯 Core Capabilities
-- **🔍 Multiple Vulnerability Scanners**: XSS, SQLi, LFI, SSRF, RCE, Open Redirect, CSRF
-- **🚀 High Performance**: Concurrent scanning with configurable thread pools
-- **🎯 Advanced Detection**: Boolean-based, time-based, error-based detection methods
-- **🛡️ WAF Evasion**: Payload mutation, header rotation, TLS fingerprint randomization
-- **🔧 External Tool Integration**: dalfox, sqlmap, nuclei, and more
-- **📊 Multiple Output Formats**: JSON, HTML, TXT
-- **🎨 Interactive CLI**: Menu-driven interface for guided scans
-- **🔄 Auto-Update**: Built-in update mechanism via GitHub releases
-- **📁 Organized Results**: Automatic directory structure for scan results
+### Core Capabilities
+- **Multiple Vulnerability Scanners**: XSS, SQLi, LFI, SSRF, RCE, Open Redirect, CSRF
+- **High Performance**: Concurrent scanning with configurable thread pools
+- **Advanced Detection**: Boolean-based, time-based, error-based detection methods
+- **WAF Evasion**: Payload mutation, header rotation, TLS fingerprint randomization
+- **External Tool Integration**: dalfox, sqlmap, nuclei, and more
+- **Multiple Output Formats**: JSON, HTML, TXT
+- **Interactive CLI**: Menu-driven interface for guided scans
+- **Auto-Update**: Built-in update mechanism via GitHub releases
+- **Organized Results**: Automatic directory structure for scan results
 
-### 🧠 Intelligent Detection Engine
+### Intelligent Detection Engine
 > **Differential analysis, boolean/time/error oracles, and payload mutation built in.**
 
-- **🎯 Differential Response Analysis**: Detects subtle behavior changes that confirm vulnerabilities
-- **🏢 Multi-Method Coverage**: Boolean-based, time-based, and error-based detection paths per vuln class
-- **🧠 Payload Mutation**: Automatic encoding, casing, and obfuscation variants for WAF bypass
-- **📊 Confidence Scoring**: Per-finding confidence to filter true positives from noise
+- **Differential Response Analysis**: Detects subtle behavior changes that confirm vulnerabilities
+- **Multi-Method Coverage**: Boolean-based, time-based, and error-based detection paths per vuln class
+- **Payload Mutation**: Automatic encoding, casing, and obfuscation variants for WAF bypass
+- **Confidence Scoring**: Per-finding confidence to filter true positives from noise
 
-### 🌐 Discovery Pipeline
+### Discovery Pipeline
 <details>
 <summary><strong>Subdomain → URL → endpoint → vulnerability</strong></summary>
 
 PenHunter integrates the best-in-class recon stack:
 
 **Subdomain enumeration:**
-- **🔧 subfinder, assetfinder** — passive discovery
-- **🍪 amass** (optional) — active + passive
+- **subfinder, assetfinder** — passive discovery
+- **amass** (optional) — active + passive
 
 **HTTP probing & URL discovery:**
-- **🎭 httpx** — live host probing
-- **🌐 urlfinder, katana, gospider** — crawler-based URL collection
-- **🧭 gau, gauplus, waybackurls** — wayback machine harvesting
+- **httpx** — live host probing
+- **urlfinder, katana, gospider** — crawler-based URL collection
+- **gau, gauplus, waybackurls** — wayback machine harvesting
 
 **Endpoint extraction:**
-- **🔍 cariddi, getJS** — JS endpoint mining
-- **📋 PenHunter native parsing** — built-in JS extractor
+- **cariddi, getJS** — JS endpoint mining
+- **PenHunter native parsing** — built-in JS extractor
 
 **Vulnerability scanning:**
-- **🛡️ dalfox, sqlmap, nuclei** — best-in-class engines, orchestrated through PenHunter
+- **dalfox, sqlmap, nuclei** — best-in-class engines, orchestrated through PenHunter
 
 </details>
 
-### 🔐 Vulnerability Classes
+### Vulnerability Classes
 <details>
 <summary><strong>Seven vulnerability classes, comprehensive coverage</strong></summary>
 
 | Class | Detection Methods | Default Engine |
 |---|---|---|
-| **🔑 XSS** | Reflected, stored, DOM | Native + dalfox |
-| **🎫 SQLi** | Boolean, time, error, union | Native + sqlmap |
-| **🔥 LFI** | Path traversal, wrapper, log poisoning | Native |
-| **📋 SSRF** | Internal, cloud metadata, gopher, file | Native + OOB |
-| **🛡️ RCE** | Command injection, template injection | Native + nuclei |
-| **🔗 Open Redirect** | Header, parameter, JS-based | Native |
-| **📊 CSRF** | Missing token, weak token, predictable | Native |
+| **XSS** | Reflected, stored, DOM | Native + dalfox |
+| **SQLi** | Boolean, time, error, union | Native + sqlmap |
+| **LFI** | Path traversal, wrapper, log poisoning | Native |
+| **SSRF** | Internal, cloud metadata, gopher, file | Native + OOB |
+| **RCE** | Command injection, template injection | Native + nuclei |
+| **Open Redirect** | Header, parameter, JS-based | Native |
+| **CSRF** | Missing token, weak token, predictable | Native |
 
 </details>
 
-### 🌐 HTTP & Networking
+### HTTP & Networking
 <details>
 <summary><strong>Production-grade HTTP layer for scaling and stealth</strong></summary>
 
-- **🔧 Custom Headers** (`-H`): Repeatable headers for authenticated scans
-- **🍪 Cookie Support** (`-c`): Session cookies for protected resources
-- **🎭 User-Agent Rotation**: Built-in UA rotation for evasion
-- **⏱️ Rate Limiting**: Configurable request pacing
-- **⏰ Timeouts**: Per-request timeout control
-- **🔄 Retry Logic**: Exponential backoff on failures
-- **🔗 Proxy Support**: Burp Suite and other intercepting proxies
-- **🔒 TLS Bypass**: Optional certificate verification skip for testing
+- **Custom Headers** (`-H`): Repeatable headers for authenticated scans
+- **Cookie Support** (`-c`): Session cookies for protected resources
+- **User-Agent Rotation**: Built-in UA rotation for evasion
+- **Rate Limiting**: Configurable request pacing
+- **Timeouts**: Per-request timeout control
+- **Retry Logic**: Exponential backoff on failures
+- **Proxy Support**: Burp Suite and other intercepting proxies
+- **TLS Bypass**: Optional certificate verification skip for testing
 
 </details>
 
-### 📤 Output & Reporting
+### Output & Reporting
 <details>
 <summary><strong>Three formats, organized result hierarchy</strong></summary>
 
-- **🖥️ Console**: Color-coded terminal output with severity highlighting
-- **📄 TXT**: Plain text logs for scripting
-- **📊 JSON**: Structured output for automation pipelines
-- **📈 HTML**: Self-contained reports for stakeholder review
+- **Console**: Color-coded terminal output with severity highlighting
+- **TXT**: Plain text logs for scripting
+- **JSON**: Structured output for automation pipelines
+- **HTML**: Self-contained reports for stakeholder review
 
 </details>
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Go Install (Recommended)
 ```bash
@@ -168,7 +168,7 @@ Download the latest release from [GitHub Releases](https://github.com/cc1a2b/Pen
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Interactive mode
 ```bash
@@ -193,7 +193,7 @@ penhunter --update
 
 ---
 
-## 💡 Usage Examples
+## Usage Examples
 
 ```bash
 # Test single URL for XSS + SQLi
@@ -222,7 +222,7 @@ penhunter --check-update
 
 ---
 
-## 🖼️ Screenshots
+## Screenshots
 
 <div align="center">
 
@@ -240,7 +240,7 @@ penhunter --check-update
 
 ---
 
-## 📋 Command Reference
+## Command Reference
 
 ```
 Usage:
@@ -276,7 +276,7 @@ Maintenance:
 
 ---
 
-## 🔧 Advanced Usage
+## Advanced Usage
 
 ### Bug Bounty Workflow
 ```bash
@@ -304,14 +304,14 @@ penhunter -u https://target.com -v xss \
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions welcome from the security community.
 
-- **🐛 Report bugs** via [GitHub Issues](https://github.com/cc1a2b/PenHunter/issues)
-- **💡 Suggest features** or new vulnerability classes
-- **📝 Improve documentation**
-- **🔧 Submit pull requests** with new payloads, detectors, or integrations
+- **Report bugs** via [GitHub Issues](https://github.com/cc1a2b/PenHunter/issues)
+- **Suggest features** or new vulnerability classes
+- **Improve documentation**
+- **Submit pull requests** with new payloads, detectors, or integrations
 
 ### Development Setup
 ```bash
@@ -323,7 +323,7 @@ make build
 
 ---
 
-## 📄 License
+## License
 
 PenHunter is released under the **MIT License**. See [LICENSE](https://github.com/cc1a2b/PenHunter/blob/main/LICENSE) for details.
 
@@ -334,13 +334,13 @@ Licensed under MIT License — free for commercial and personal use
 
 ---
 
-## ⭐ Support
+## Support
 
 If PenHunter helps with your security research:
 
 <div align="center">
 
-**⭐ Star this repo** • **🐦 Follow [@cc1a2b](https://twitter.com/cc1a2b)** • **📢 Share with the security community**
+**Star this repo** • **Follow [@cc1a2b](https://twitter.com/cc1a2b)** • **Share with the security community**
 
 </div>
 
@@ -348,8 +348,8 @@ If PenHunter helps with your security research:
 
 <div align="center">
 
-**🔍 PenHunter — Modular Web Vulnerability Scanner**
+**PenHunter — Modular Web Vulnerability Scanner**
 
-*Built with ❤️ by [cc1a2b](https://github.com/cc1a2b) for the security community*
+*Built with by [cc1a2b](https://github.com/cc1a2b) for the security community*
 
 </div>
