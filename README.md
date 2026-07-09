@@ -334,13 +334,11 @@ Licensed under MIT License — free for commercial and personal use
 
 ---
 
-## ☕ Support
+## ⭐ Support
 
 If PenHunter helps with your security research:
 
 <div align="center">
-
-[![Buy Me A Coffee](https://cdn.buymeacoffee.com/buttons/default-orange.png)](https://www.buymeacoffee.com/cc1a2b)
 
 **⭐ Star this repo** • **🐦 Follow [@cc1a2b](https://twitter.com/cc1a2b)** • **📢 Share with the security community**
 
