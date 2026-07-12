@@ -350,6 +350,6 @@ If PenHunter helps with your security research:
 
 **PenHunter — Modular Web Vulnerability Scanner**
 
-*Built with by [cc1a2b](https://github.com/cc1a2b) for the security community*
+*Built by [cc1a2b](https://github.com/cc1a2b) for the security community*
 
 </div>
